@@ -17,7 +17,7 @@ function prompt() {
     elif [[ $REPLY == n ]]; then
       return 1
     else
-      echo "Please give answer of y or n."
+      echo "> Please give answer of y or n."
     fi
   done
 }
