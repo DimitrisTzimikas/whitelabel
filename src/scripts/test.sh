@@ -4,7 +4,6 @@
 # test script is created to test other scripts
 ###############################################
 
-source ./src/scripts/prompt.sh
-source ./src/scripts/rename-app-display-name.sh
+source ./src/scripts/increment-version-number.sh
 
-renameAppName
+increment_version_number
