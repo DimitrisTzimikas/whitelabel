@@ -4,17 +4,17 @@
 # This script change app name for both iOS/Android
 ###################################################
 
-function renameAppName() {
-  local APP_JSON_PATH="./app.json";
-  local DEFAULT_APP_NAME;
-  local NEW_APP_NAME;
+function rename_app_name() {
+  local APP_JSON_PATH="./app.json"
+  local DEFAULT_APP_NAME
+  local NEW_APP_NAME
   # iOS variables
-  local IOS_PREFIX;
-  local IOS_PROJECT_FILE;
-  local IOS_PLIST_FILE;
+  local IOS_PREFIX
+  local IOS_PROJECT_FILE
+  local IOS_PLIST_FILE
   # Android variables
-  local ANDROID_SRC_PREFIX="android/app/src/main";
-  local ANDROID_VALUES;
+  local ANDROID_SRC_PREFIX="android/app/src/main"
+  local ANDROID_VALUES
 
   DEFAULT_APP_NAME=$(< "$APP_JSON_PATH" python -c 'import json,sys;obj=json.load(sys.stdin);print obj["name"]')
   NEW_APP_NAME=$(< "$APP_JSON_PATH" python -c 'import json,sys;obj=json.load(sys.stdin);print obj["displayName"]')
