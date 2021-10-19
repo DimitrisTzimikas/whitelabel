@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 #######################################################################
-# prompt script takes $1 as argument and displays the question to user
+# This script takes $1 as argument and displays the question to user
 # then user needs to answer with y or n
 #######################################################################
 
