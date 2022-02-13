@@ -1,2 +1,2 @@
 # whitelabel
-Generic white label react-native app
+Generic white label react-native app.
